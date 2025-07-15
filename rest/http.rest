@@ -1,0 +1,33 @@
+### 
+
+GET http://localhost:8080/api/libros
+###
+
+POST http://localhost:8080/api/libros
+Content-Type: application/json
+
+ {
+    "title": "El amor en los tiempos del cólera",
+    "author": "Gabriel García Márquez",
+    "isbn": "9788497592208",
+    "year": "1985",
+    "status": "Prestado"
+  }
+###
+
+DELETE http://localhost:8080/api/libros/6
+
+###
+POST  http://localhost:8080/api/libros/1/prestar
+
+###
+PUT http://localhost:8080/api/libros/3
+Content-Type: application/json
+
+{
+    "title": "cólera",
+    "author": "Márquez",
+    "isbn": "97882208",
+    "year": "185",
+    "status": "Disponible"
+}
